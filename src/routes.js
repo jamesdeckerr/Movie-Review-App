@@ -5,12 +5,13 @@ import MovieDetail from './components/MovieDetail';
 import Profile from './components/Profile';
 import Login from './components/Login';
 import Register from './components/Register';
+import PrivateRoute from './components/PrivateRoute';
 
 const RoutesConfig = () => (
   <Routes>
-    <Route path="/" element={<Home />} />
-    <Route path="/movie/:id" element={<MovieDetail />} />
-    <Route path="/user/:id" element={<Profile />} />
+    <Route path="/" element={<PrivateRoute><Home /></PrivateRoute>} />
+    <Route path="/movie/:id" element={<PrivateRoute><MovieDetail /></PrivateRoute>} />
+    <Route path="/profile" element={<PrivateRoute><Profile /></PrivateRoute>} />
     <Route path="/login" element={<Login />} />
     <Route path="/register" element={<Register />} />
   </Routes>

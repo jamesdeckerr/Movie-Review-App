@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { createUser } from '../services/api';
 import './Register.css';
+import { useNavigate } from 'react-router-dom';
+import { useAuth } from '../services/AuthContext';
 
 const Register = () => {
   const [formData, setFormData] = useState({
@@ -12,6 +14,9 @@ const Register = () => {
     gender: '',
     location: '',
   });
+  const [error, setError] = useState(null);
+  const navigate = useNavigate();
+  const { login } = useAuth();
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -19,13 +24,23 @@ const Register = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    await createUser(formData);
-    // Redirect or update UI after successful registration
+    try {
+      const user = await createUser(formData);
+      if (user) {
+        login(user);
+        navigate('/');
+      } else {
+        setError('Registration failed. Please try again.');
+      }
+    } catch (err) {
+      setError('An error occurred during registration. Please try again.');
+    }
   };
 
   return (
     <div className="register">
       <h2>Register</h2>
+      {error && <p className="error">{error}</p>}
       <form onSubmit={handleSubmit}>
         <input type="text" name="username" placeholder="Username" onChange={handleChange} value={formData.username} />
         <input type="password" name="password" placeholder="Password" onChange={handleChange} value={formData.password} />

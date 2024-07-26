@@ -34,7 +34,14 @@ export const createUser = async (user) => {
     },
     body: JSON.stringify(user),
   });
-  return response.json();
+  const newUser = await response.json();
+  return newUser;
 };
 
-// Add more functions as needed for CRUD operations
+export const loginUser = async (credentials) => {
+  const users = await getUsers();
+  const user = users.find(
+    user => user.username === credentials.username && user.password === credentials.password
+  );
+  return user ? user : null;
+};

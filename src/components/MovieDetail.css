@@ -1,0 +1,26 @@
+.movie-detail {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+  }
+  
+  .movie-detail img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .movie-detail h2 {
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  .movie-detail p {
+    margin-top: 10px;
+    text-align: center;
+  }
+  

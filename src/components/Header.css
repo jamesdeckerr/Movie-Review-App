@@ -1,0 +1,24 @@
+.App-header {
+    background-color: #333;
+    padding: 10px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .App-header ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+  
+  .App-header ul li {
+    margin-right: 20px;
+  }
+  
+  .App-header ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  

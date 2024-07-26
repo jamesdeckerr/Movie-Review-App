@@ -1,0 +1,37 @@
+{
+  "users": [
+    {
+      "id": "4794",
+      "username": "test@email.com",
+      "password": "last",
+      "email": "test@email.com",
+      "profilePic": "",
+      "age": "33",
+      "gender": "m",
+      "location": "nashville"
+    },
+    {
+      "id": "35a8",
+      "username": "test@email.com",
+      "password": "last",
+      "email": "",
+      "profilePic": "",
+      "age": "",
+      "gender": "",
+      "location": ""
+    },
+    {
+      "id": "2f04",
+      "username": "test@email.com",
+      "password": "last",
+      "email": "",
+      "profilePic": "",
+      "age": "",
+      "gender": "",
+      "location": ""
+    }
+  ],
+  "movies": [],
+  "reviews": [],
+  "ratings": []
+}

@@ -1,26 +1,99 @@
+@import '@fontsource/abril-fatface';
+
+body {
+  margin: 0;
+  font-family: 'Abril Fatface', serif;
+  background-color: #f4f4f9;
+}
+
 .movie-detail {
-    max-width: 800px;
-    margin: 50px auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    background-color: #f9f9f9;
-  }
-  
-  .movie-detail img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-  }
-  
-  .movie-detail h2 {
-    margin-top: 10px;
-    text-align: center;
-  }
-  
-  .movie-detail p {
-    margin-top: 10px;
-    text-align: center;
-  }
-  
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 40px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.movie-detail h2 {
+  font-family: 'Abril Fatface', serif;
+  color: #333;
+}
+
+.poster {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-bottom: 40px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.average-rating {
+  margin-bottom: 40px;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.reviews {
+  text-align: left;
+  margin-top: 40px;
+}
+
+.reviews h3 {
+  font-family: 'Abril Fatface', serif;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.review-item {
+  border-top: 1px solid #ccc;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.review-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.review-header .username {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #555;
+}
+
+.review-text {
+  margin-top: 10px;
+  line-height: 1.5;
+  color: #333;
+}
+
+.new-review-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.new-review-button:hover {
+  background-color: #0056b3;
+}
+
+.new-review-link {
+  text-decoration: none;
+}

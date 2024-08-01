@@ -5,10 +5,11 @@
       "username": "test@email.com",
       "password": "last",
       "email": "test@email.com",
-      "profilePic": "",
+      "profilePic": "https://media.vanityfair.com/photos/58af2d64c41f737fae528166/16:9/w_1280,c_limit/get-out-review.jpg",
       "age": "33",
       "gender": "m",
-      "location": "nashville"
+      "location": "nashville",
+      "backgroundImg": ""
     },
     {
       "id": "35a8",
@@ -58,7 +59,8 @@
       "profilePic": "https://static01.nyt.com/images/2018/09/08/arts/08macmiller1/merlin_143415120_0cc6ced3-2f72-4a48-a12c-ab822421e8a2-articleLarge.jpg?quality=75&auto=webp&disable=upscale",
       "age": "90",
       "gender": "Female",
-      "location": "Los Angeles"
+      "location": "Los Angeles",
+      "backgroundImg": "https://www.miltonandking.com/wp-content/uploads/2022/08/Goosebumps-Ripple-1.jpg"
     },
     {
       "id": "0ce1",
@@ -71,7 +73,95 @@
       "location": "columbia"
     }
   ],
-  "movies": [],
-  "reviews": [],
+  "movies": [
+    {
+      "id": "bde6",
+      "title": "The Breakfast Club",
+      "posterURL": "https://m.media-amazon.com/images/I/91LolY86WqL._AC_UF894,1000_QL80_.jpg"
+    }
+  ],
+  "reviews": [
+    {
+      "id": "d9dc",
+      "userID": "0ce1",
+      "movieID": "Interstellar",
+      "moviePoster": "https://m.media-amazon.com/images/I/71dN1QYnf+L._AC_UF894,1000_QL80_.jpg",
+      "rating": 5,
+      "reviewText": "W movie !",
+      "datePosted": "2024-07-31T19:06:37.894Z"
+    },
+    {
+      "id": "518f",
+      "userID": "0ce1",
+      "movieID": "mid90s",
+      "moviePoster": "https://m.media-amazon.com/images/I/611kQj5Yx1L._AC_UF894,1000_QL80_.jpg",
+      "rating": 5,
+      "reviewText": "Great Movie !",
+      "datePosted": "2024-07-31T19:15:49.971Z"
+    },
+    {
+      "id": "2a5e",
+      "userID": "8532",
+      "movieID": "Whiplash",
+      "moviePoster": "https://m.media-amazon.com/images/I/61PwPadu4-L._AC_UF894,1000_QL80_.jpg",
+      "rating": 5,
+      "reviewText": "I would give it 6 stars if I could",
+      "datePosted": "2024-07-31T19:16:59.042Z"
+    },
+    {
+      "id": "791e",
+      "userID": "8532",
+      "movieID": "Get Out",
+      "moviePoster": "https://m.media-amazon.com/images/M/MV5BMjUxMDQwNjcyNl5BMl5BanBnXkFtZTgwNzcwMzc0MTI@._V1_.jpg",
+      "rating": 4,
+      "reviewText": "It was super intense and kept me at the edge of my seat",
+      "datePosted": "2024-07-31T19:32:22.672Z"
+    },
+    {
+      "id": "3a62",
+      "userID": "0ce1",
+      "movieID": "mid90s",
+      "moviePoster": "https://m.media-amazon.com/images/I/611kQj5Yx1L._AC_UF894,1000_QL80_.jpg",
+      "rating": 1,
+      "reviewText": "Didn't enjoy this movie and I found it boring",
+      "datePosted": "2024-07-31T19:44:51.298Z"
+    },
+    {
+      "id": "bbff",
+      "userID": "4794",
+      "movieID": "mid90s",
+      "moviePoster": "https://m.media-amazon.com/images/I/611kQj5Yx1L._AC_UF894,1000_QL80_.jpg",
+      "rating": 4,
+      "reviewText": "Pretty good",
+      "datePosted": "2024-07-31T19:45:43.082Z"
+    },
+    {
+      "id": "c8bf",
+      "userID": "8532",
+      "movieID": "Interstellar",
+      "moviePoster": "https://m.media-amazon.com/images/I/71dN1QYnf+L._AC_UF894,1000_QL80_.jpg",
+      "rating": 2,
+      "reviewText": "Bad Movie, overrated.",
+      "datePosted": "2024-07-31T20:04:27.381Z"
+    },
+    {
+      "id": "85ab",
+      "userID": "8532",
+      "movieID": "mid90s",
+      "moviePoster": "https://m.media-amazon.com/images/I/611kQj5Yx1L._AC_UF894,1000_QL80_.jpg",
+      "rating": 5,
+      "reviewText": "One of my all time favorites",
+      "datePosted": "2024-07-31T20:06:57.827Z"
+    },
+    {
+      "id": "dda5",
+      "userID": "8532",
+      "movieID": "The Breakfast Club",
+      "moviePoster": "https://m.media-amazon.com/images/I/91LolY86WqL._AC_UF894,1000_QL80_.jpg",
+      "rating": 3,
+      "reviewText": "Pretty solid, slightly overhyped though",
+      "datePosted": "2024-07-31T20:13:09.320Z"
+    }
+  ],
   "ratings": []
 }

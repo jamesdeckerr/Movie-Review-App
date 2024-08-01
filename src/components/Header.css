@@ -1,24 +1,47 @@
-.App-header {
-    background-color: #333;
-    padding: 10px;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .App-header ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-  }
-  
-  .App-header ul li {
-    margin-right: 20px;
-  }
-  
-  .App-header ul li a {
-    color: white;
-    text-decoration: none;
-  }
-  
+.header {
+  background-color: #343a40;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.header .logo {
+  font-family: 'Abril Fatface', serif;
+  font-size: 1.5em;
+}
+
+.header nav {
+  display: flex;
+  gap: 20px;
+}
+
+.header nav a {
+  color: white;
+  text-decoration: none;
+  font-family: 'Abril Fatface', serif;
+  font-size: 1.1em;
+}
+
+.header nav a:hover {
+  text-decoration: underline;
+}
+
+.logout-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.logout-button:hover {
+  background-color: #0056b3;
+}

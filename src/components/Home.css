@@ -1,0 +1,43 @@
+.home {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.home h2 {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.reviews-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.review-item {
+  width: 80%;
+  display: flex;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  background-color: #f9f9f9;
+  align-items: center;
+}
+
+.poster {
+  max-width: 150px;
+  margin-right: 20px;
+}
+
+.review-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}

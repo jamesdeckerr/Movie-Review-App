@@ -1,34 +1,18 @@
 import React from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import './Header.css';
-import { useAuth } from '../services/AuthContext';
 
 const Header = () => {
-  const { user, logout } = useAuth();
-  const navigate = useNavigate();
-
-  const handleLogout = () => {
-    logout();
-    navigate('/');
-  };
-
   return (
-    <header className="App-header">
+    <header className="header">
+      <div className="logo">Movie Review App</div>
       <nav>
-        <ul>
-          <li><Link to="/">Home</Link></li>
-          {user ? (
-            <>
-              <li><Link to="/profile">Profile</Link></li>
-              <li><button onClick={handleLogout}>Logout</button></li>
-            </>
-          ) : (
-            <>
-              <li><Link to="/login">Login</Link></li>
-              <li><Link to="/register">Register</Link></li>
-            </>
-          )}
-        </ul>
+        <Link to="/">Home</Link>
+        <Link to="/submit-review">Submit New Review</Link>
+        <Link to="/add-new-movie">Add New Movie</Link>
+        <Link to="/all-movies">View All Movies</Link>
+        <Link to="/profile">Profile</Link>
+        <button className="logout-button">Logout</button>
       </nav>
     </header>
   );

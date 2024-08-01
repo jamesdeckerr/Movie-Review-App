@@ -1,0 +1,59 @@
+.submit-review {
+    margin-top: 60px;
+    padding: 20px;
+    max-width: 800px;
+    margin: 60px auto;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+  }
+  
+  .submit-review h2 {
+    font-family: 'Abril Fatface', serif;
+    color: #333;
+  }
+  
+  .submit-review form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .submit-review .movie-selection {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .submit-review .rating {
+    display: flex;
+    align-items: center;
+  }
+  
+  .submit-review button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .submit-review button:hover {
+    background-color: #0056b3;
+  }
+  
+  .delete-button {
+    background-color: #ff4d4d; /* Red color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .delete-button:hover {
+    background-color: #cc0000; /* Darker red color */
+  }
+  

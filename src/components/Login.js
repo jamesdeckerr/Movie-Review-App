@@ -1,41 +1,48 @@
 import React, { useState } from 'react';
-import { loginUser } from '../services/api';
-import './Login.css';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../services/AuthContext';
+import './Login.css';
 
 const Login = () => {
-  const [credentials, setCredentials] = useState({ username: '', password: '' });
-  const [error, setError] = useState(null);
-  const navigate = useNavigate();
+  const [formData, setFormData] = useState({ username: '', password: '' });
   const { login } = useAuth();
+  const navigate = useNavigate();
 
   const handleChange = (e) => {
-    setCredentials({ ...credentials, [e.target.name]: e.target.value });
+    setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    try {
-      const user = await loginUser(credentials);
-      if (user) {
-        login(user);
-        navigate('/');
-      } else {
-        setError('Invalid username or password');
-      }
-    } catch (err) {
-      setError('An error occurred during login. Please try again.');
+    // Mock user authentication for demonstration
+    const users = await fetch('http://localhost:3001/users').then(res => res.json());
+    const user = users.find(u => u.username === formData.username && u.password === formData.password);
+    if (user) {
+      login(user);
+      navigate('/');
+    } else {
+      alert('Invalid credentials');
     }
   };
 
   return (
     <div className="login">
       <h2>Login</h2>
-      {error && <p className="error">{error}</p>}
       <form onSubmit={handleSubmit}>
-        <input type="text" name="username" placeholder="Username" onChange={handleChange} value={credentials.username} />
-        <input type="password" name="password" placeholder="Password" onChange={handleChange} value={credentials.password} />
+        <input
+          type="text"
+          name="username"
+          placeholder="Username"
+          onChange={handleChange}
+          value={formData.username}
+        />
+        <input
+          type="password"
+          name="password"
+          placeholder="Password"
+          onChange={handleChange}
+          value={formData.password}
+        />
         <button type="submit">Login</button>
       </form>
     </div>

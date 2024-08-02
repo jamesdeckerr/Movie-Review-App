@@ -18,7 +18,6 @@ const ReviewForm = ({ movieId }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     await createReview(formData);
-    // Redirect or update UI after successful submission
   };
 
   return (

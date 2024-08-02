@@ -1,12 +1,25 @@
 .profile {
-  margin-top: 80px; /* Adjust based on header height */
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-content {
+  position: relative;
+  z-index: 1; 
+  background-color: rgba(255, 255, 255, 0.8);  
   padding: 20px;
-  max-width: 800px;
-  margin: 80px auto; /* Centers the profile component */
-  border: 1px solid #ccc;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  background-color: #ffffff;
+  width: 90%;
+  max-width: 800px;
+  text-align: center;
 }
 
 .profile h2 {
@@ -14,23 +27,29 @@
   color: #333;
 }
 
-.profile .profile-pic {
+.edit-profile-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.profile-pic {
   max-width: 150px;
-  border-radius: 10px;
+  border-radius: 50%;
   margin-bottom: 20px;
 }
 
-.profile .username {
+.user-info p {
   font-family: 'Abril Fatface', serif;
-  font-size: 1.5em;
-  margin-bottom: 20px;
+  color: #555;
 }
 
-.profile .review-list {
+.reviews-list {
   margin-top: 20px;
 }
 
-.profile .review-item {
+.review-item {
   border-top: 1px solid #ccc;
   padding: 20px 0;
   margin-top: 20px;
@@ -38,4 +57,65 @@
   border-radius: 10px;
   padding: 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.review-item img.poster {
+  max-width: 100px;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
+.review-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.review-content h4 {
+  font-family: 'Abril Fatface', serif;
+  color: #333;
+}
+
+.review-content p {
+  font-family: 'Arial', sans-serif;
+  color: #555;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.edit-review-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.edit-review-form input,
+.edit-review-form textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
 }

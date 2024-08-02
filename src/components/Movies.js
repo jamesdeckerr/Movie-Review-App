@@ -17,7 +17,6 @@ const Movies = () => {
         posterURL: review.moviePoster,
       }));
 
-      // Combine movies and reviewedMovies, filter out duplicates
       const combinedMovies = [...movies, ...reviewedMovies];
       const uniqueMovies = Array.from(new Set(combinedMovies.map(movie => movie.title)))
         .map(title => {

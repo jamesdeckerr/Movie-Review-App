@@ -9,7 +9,7 @@
       "age": "33",
       "gender": "m",
       "location": "nashville",
-      "backgroundImg": ""
+      "backgroundImg": "https://i.redd.it/ns-ultra-album-cover-wallpaper-expanded-not-cropped-and-v0-fsf8chdh693b1.png?width=1280&format=png&auto=webp&s=1b3f2edbf49ee80f66c94a66fd46eb1acfdb9e0f"
     },
     {
       "id": "35a8",
@@ -39,7 +39,8 @@
       "profilePic": "https://i.scdn.co/image/ab6761610000e5ebed3b89aa602145fde71a163a",
       "age": "20",
       "gender": "Male",
-      "location": "Nashville"
+      "location": "Nashville",
+      "backgroundImg": "https://images8.alphacoders.com/133/1336966.jpeg"
     },
     {
       "id": "7059",
@@ -60,7 +61,7 @@
       "age": "90",
       "gender": "Female",
       "location": "Los Angeles",
-      "backgroundImg": "https://www.miltonandking.com/wp-content/uploads/2022/08/Goosebumps-Ripple-1.jpg"
+      "backgroundImg": "https://i.redd.it/d2hd73xxwvaa1.jpg"
     },
     {
       "id": "0ce1",
@@ -78,6 +79,21 @@
       "id": "bde6",
       "title": "The Breakfast Club",
       "posterURL": "https://m.media-amazon.com/images/I/91LolY86WqL._AC_UF894,1000_QL80_.jpg"
+    },
+    {
+      "id": "4de3",
+      "title": "Ratatouille",
+      "posterURL": "https://m.media-amazon.com/images/I/71mfMTs-52L.jpg"
+    },
+    {
+      "id": "bfa5",
+      "title": "Star Wars A New Hope",
+      "posterURL": "https://m.media-amazon.com/images/I/612h-jwI+EL._AC_UF1000,1000_QL80_.jpg"
+    },
+    {
+      "id": "2de0",
+      "title": "Star Wars Episode 1",
+      "posterURL": "https://m.media-amazon.com/images/M/MV5BYTRhNjcwNWQtMGJmMi00NmQyLWE2YzItODVmMTdjNWI0ZDA2XkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_.jpg"
     }
   ],
   "reviews": [
@@ -154,13 +170,31 @@
       "datePosted": "2024-07-31T20:06:57.827Z"
     },
     {
-      "id": "dda5",
+      "id": "8758",
+      "userID": "f2e0",
+      "movieID": "Ratatouille",
+      "moviePoster": "https://m.media-amazon.com/images/I/71mfMTs-52L.jpg",
+      "rating": 5,
+      "reviewText": "Pixars greatest movie, an all-time classic for all ages",
+      "datePosted": "2024-08-02T17:35:45.599Z"
+    },
+    {
+      "id": "46ea",
+      "userID": "4794",
+      "movieID": "Ratatouille",
+      "moviePoster": "https://m.media-amazon.com/images/I/71mfMTs-52L.jpg",
+      "rating": 5,
+      "reviewText": "Love this movie!",
+      "datePosted": "2024-08-02T17:42:38.147Z"
+    },
+    {
+      "id": "1008",
       "userID": "8532",
-      "movieID": "The Breakfast Club",
-      "moviePoster": "https://m.media-amazon.com/images/I/91LolY86WqL._AC_UF894,1000_QL80_.jpg",
-      "rating": 3,
-      "reviewText": "Pretty solid, slightly overhyped though",
-      "datePosted": "2024-07-31T20:13:09.320Z"
+      "movieID": "Star Wars Episode 1",
+      "moviePoster": "https://m.media-amazon.com/images/M/MV5BYTRhNjcwNWQtMGJmMi00NmQyLWE2YzItODVmMTdjNWI0ZDA2XkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_.jpg",
+      "rating": 2,
+      "reviewText": "bad Movie",
+      "datePosted": "2024-08-02T18:30:59.518Z"
     }
   ],
   "ratings": []

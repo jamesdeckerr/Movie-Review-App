@@ -1,8 +1,17 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import { useAuth } from '../services/AuthContext';
 import './Header.css';
 
 const Header = () => {
+  const { user, logout } = useAuth();
+  const navigate = useNavigate();
+
+  const handleLogout = () => {
+    logout();
+    navigate('/');
+  };
+
   return (
     <header className="header">
       <div className="logo">Movie Review App</div>
@@ -11,8 +20,14 @@ const Header = () => {
         <Link to="/submit-review">Submit New Review</Link>
         <Link to="/add-new-movie">Add New Movie</Link>
         <Link to="/all-movies">View All Movies</Link>
-        <Link to="/profile">Profile</Link>
-        <button className="logout-button">Logout</button>
+        {user ? (
+          <>
+            <Link to="/profile">Profile</Link>
+            <button className="logout-button" onClick={handleLogout}>Logout</button>
+          </>
+        ) : (
+          <Link to="/login">Login</Link>
+        )}
       </nav>
     </header>
   );

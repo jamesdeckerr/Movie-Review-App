@@ -15,7 +15,7 @@ const Home = () => {
 
   return (
     <div className="home">
-      <h2>Most Popular</h2>
+     
       <MovieList movies={movies} />
 
       <h2>Recent Reviews</h2>

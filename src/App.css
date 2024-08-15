@@ -1,3 +1,27 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-image: url('https://images6.alphacoders.com/962/962005.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white; 
+}
+
+.main-content {
+  position: relative;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0); 
+  min-height: 100vh; 
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
 .App {
   text-align: center;
 }
@@ -36,4 +60,3 @@
     transform: rotate(360deg);
   }
 }
-

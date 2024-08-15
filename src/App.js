@@ -8,8 +8,10 @@ import Movies from './components/Movies';
 import Home from './components/Home';
 import CreateMovie from './components/CreateMovie';
 import Login from './components/Login';
+import Register from './components/Register'; 
 import PrivateRoute from './components/PrivateRoute';
 import { AuthProvider } from './services/AuthContext';
+import './App.css';
 
 function App() {
   return (
@@ -20,6 +22,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/login" element={<Login />} />
+            <Route path="/register" element={<Register />} /> {/* Add the Register route */}
             <Route path="/profile" element={
               <PrivateRoute>
                 <Profile />

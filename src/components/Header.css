@@ -1,7 +1,8 @@
 .header {
-  background-color: #343a40;
+  background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background to blend with the global image */
   color: white;
   padding: 10px 20px;
+  padding-right: 400px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -10,17 +11,18 @@
   top: 0;
   left: 0;
   z-index: 1000;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .header .logo {
-  font-family: 'Abril Fatface', serif;
-  font-size: 1.5em;
+  max-width: 150px; 
+  height: auto;
 }
 
 .header nav {
   display: flex;
   gap: 20px;
-  margin-right: 40px; 
+  margin-right: 80px;
 }
 
 .header nav a {

@@ -2,7 +2,7 @@
     margin-top: 60px;
     padding: 20px;
     max-width: 800px;
-    margin: 60px auto;
+    margin: 300px auto;
     border: 1px solid #ccc;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -24,6 +24,11 @@
     display: flex;
     gap: 10px;
   }
+
+.submit-review .movie-selection label {
+    color: #333; 
+    font-size: 16px;
+}
   
   .submit-review .rating {
     display: flex;
@@ -32,7 +37,7 @@
   
   .submit-review button {
     background-color: #007bff;
-    color: white;
+    color: rgb(255, 255, 255);
     border: none;
     padding: 10px 20px;
     border-radius: 5px;

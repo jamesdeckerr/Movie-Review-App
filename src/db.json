@@ -72,6 +72,26 @@
       "age": "00",
       "gender": "male",
       "location": "columbia"
+    },
+    {
+      "id": "66e2",
+      "username": "The Critic",
+      "password": "password",
+      "email": "jamesd@fakemail.com",
+      "profilePic": "https://qph.cf2.quoracdn.net/main-qimg-3a6bc7e3ce19f9d7d609f6ecabb72048-c",
+      "age": "20",
+      "gender": "Male",
+      "location": "Nashville"
+    },
+    {
+      "id": "48ee",
+      "username": "Movie Watcher",
+      "password": "password",
+      "email": "testemail@hotmail.com",
+      "profilePic": "Show the Add New movie Button",
+      "age": "60",
+      "gender": "Male",
+      "location": "Nashville"
     }
   ],
   "movies": [
@@ -94,6 +114,26 @@
       "id": "2de0",
       "title": "Star Wars Episode 1",
       "posterURL": "https://m.media-amazon.com/images/M/MV5BYTRhNjcwNWQtMGJmMi00NmQyLWE2YzItODVmMTdjNWI0ZDA2XkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_.jpg"
+    },
+    {
+      "id": "7c32",
+      "title": "Avengers End Game",
+      "posterURL": "https://m.media-amazon.com/images/M/MV5BMTc5MDE2ODcwNV5BMl5BanBnXkFtZTgwMzI2NzQ2NzM@._V1_.jpg"
+    },
+    {
+      "id": "fe44",
+      "title": "Deadpool & Wolverine",
+      "posterURL": "https://upload.wikimedia.org/wikipedia/en/4/4c/Deadpool_%26_Wolverine_poster.jpg"
+    },
+    {
+      "id": "46e8",
+      "title": "Inception",
+      "posterURL": "https://m.media-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_.jpg"
+    },
+    {
+      "id": "b1bd",
+      "title": "Tenet",
+      "posterURL": "        - [ ] https://resizing.flixster.com/zHrh5Wu9CxOi55eiImv27H-7zMw=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzliMTVjNTkwLTA1ZTUtNDEyMS04NmNmLTBiMzA2OThhMGY0MC5qcGc="
     }
   ],
   "reviews": [
@@ -130,7 +170,7 @@
       "movieID": "Get Out",
       "moviePoster": "https://m.media-amazon.com/images/M/MV5BMjUxMDQwNjcyNl5BMl5BanBnXkFtZTgwNzcwMzc0MTI@._V1_.jpg",
       "rating": 4,
-      "reviewText": "It was super intense and kept me at the edge of my seat",
+      "reviewText": "It was super intense and kept me at the edge of my seat, there were a few subtle things I didn't like however it was overall very enjoyable",
       "datePosted": "2024-07-31T19:32:22.672Z"
     },
     {
@@ -156,8 +196,8 @@
       "userID": "8532",
       "movieID": "Interstellar",
       "moviePoster": "https://m.media-amazon.com/images/I/71dN1QYnf+L._AC_UF894,1000_QL80_.jpg",
-      "rating": 2,
-      "reviewText": "Bad Movie, overrated.",
+      "rating": 5,
+      "reviewText": "Such a crazy story, one of the greatest movies I've ever seen!",
       "datePosted": "2024-07-31T20:04:27.381Z"
     },
     {
@@ -166,17 +206,8 @@
       "movieID": "mid90s",
       "moviePoster": "https://m.media-amazon.com/images/I/611kQj5Yx1L._AC_UF894,1000_QL80_.jpg",
       "rating": 5,
-      "reviewText": "One of my all time favorites",
+      "reviewText": "Under appreciated movie, such a great film front to back",
       "datePosted": "2024-07-31T20:06:57.827Z"
-    },
-    {
-      "id": "8758",
-      "userID": "f2e0",
-      "movieID": "Ratatouille",
-      "moviePoster": "https://m.media-amazon.com/images/I/71mfMTs-52L.jpg",
-      "rating": 5,
-      "reviewText": "Pixars greatest movie, an all-time classic for all ages",
-      "datePosted": "2024-08-02T17:35:45.599Z"
     },
     {
       "id": "46ea",
@@ -192,9 +223,54 @@
       "userID": "8532",
       "movieID": "Star Wars Episode 1",
       "moviePoster": "https://m.media-amazon.com/images/M/MV5BYTRhNjcwNWQtMGJmMi00NmQyLWE2YzItODVmMTdjNWI0ZDA2XkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_.jpg",
-      "rating": 2,
-      "reviewText": "bad Movie",
+      "rating": 3,
+      "reviewText": "Not as bad as some say but still not one of the segas best",
       "datePosted": "2024-08-02T18:30:59.518Z"
+    },
+    {
+      "id": "05db",
+      "userID": "f2e0",
+      "movieID": "Avengers End Game",
+      "moviePoster": "https://m.media-amazon.com/images/M/MV5BMTc5MDE2ODcwNV5BMl5BanBnXkFtZTgwMzI2NzQ2NzM@._V1_.jpg",
+      "rating": 5,
+      "reviewText": "two thumbs up",
+      "datePosted": "2024-08-02T20:29:34.531Z"
+    },
+    {
+      "id": "8c0c",
+      "userID": "66e2",
+      "movieID": "Deadpool & Wolverine",
+      "moviePoster": "https://upload.wikimedia.org/wikipedia/en/4/4c/Deadpool_%26_Wolverine_poster.jpg",
+      "rating": 5,
+      "reviewText": "Well worth the wait, super funny yet had a good plot",
+      "datePosted": "2024-08-12T17:44:20.551Z"
+    },
+    {
+      "id": "58d7",
+      "userID": "66e2",
+      "movieID": "Ratatouille",
+      "moviePoster": "https://m.media-amazon.com/images/I/71mfMTs-52L.jpg",
+      "rating": 5,
+      "reviewText": "One of the best children's movies ever",
+      "datePosted": "2024-08-12T17:49:41.399Z"
+    },
+    {
+      "id": "04ba",
+      "userID": "66e2",
+      "movieID": "Get Out",
+      "moviePoster": "https://m.media-amazon.com/images/M/MV5BMjUxMDQwNjcyNl5BMl5BanBnXkFtZTgwNzcwMzc0MTI@._V1_.jpg",
+      "rating": 3,
+      "reviewText": "As much as I love and appreciate Jordan Peele this wasn't his best work",
+      "datePosted": "2024-08-12T17:50:27.108Z"
+    },
+    {
+      "id": "706b",
+      "userID": "48ee",
+      "movieID": "Tenet",
+      "moviePoster": "        - [ ] https://resizing.flixster.com/zHrh5Wu9CxOi55eiImv27H-7zMw=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzliMTVjNTkwLTA1ZTUtNDEyMS04NmNmLTBiMzA2OThhMGY0MC5qcGc=",
+      "rating": 5,
+      "reviewText": "W",
+      "datePosted": "2024-08-12T18:24:44.167Z"
     }
   ],
   "ratings": []
